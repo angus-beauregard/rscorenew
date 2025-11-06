@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+pillow
+pytesseract
+opencv-python-headless
+plotly
+supabase>=2.4.0
