@@ -10,8 +10,8 @@ except ImportError:
     create_client = None
     Client = None
 
-SUPABASE_URL = os.getenv("SUPABASE_URL", "")
-SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY", os.getenv("SUPABASE_KEY", ""))
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_ANON_KEY")
 
 def _get_client() -> Optional["Client"]:
     if not create_client or not SUPABASE_URL or not SUPABASE_KEY:
